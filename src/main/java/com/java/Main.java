@@ -124,43 +124,77 @@ import java.util.Scanner;
 //    }
 //}
 
+//class Main {
+//    public static void main (String[] args){
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter number 1: ");
+//        int a = scan.nextInt();
+//
+//        System.out.println("Enter math symbol: ");
+//        scan.nextLine();
+//        char math = scan.nextLine().charAt(0);
+//
+//        System.out.println("Enter number 2: ");
+//        int b = scan.nextInt();
+//
+//        int res = 0;
+//        switch (math) {
+//            case '+':
+//                res = a + b;
+//                System.out.println("Res: " + res);
+//                break;
+//            case '-':
+//                res = a - b;
+//                System.out.println("Res: " + res);
+//                break;
+//            case '*':
+//                res = a * b;
+//                System.out.println("Res: " + res);
+//                break;
+//            case '/':
+//                if(b == 0)
+//                    System.out.println("Error");
+//                    else {
+//                    res = a / b;
+//                    System.out.println("Res: " + res);
+//                }
+//                break;
+//            default:
+//                System.out.println("Error");
+//        }
+//    }
+//}
+
+//    *** lesson 7 ***
 class Main {
-    public static void main (String[] args){
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter number 1: ");
-        int a = scan.nextInt();
+    public static void main(String[] args) {
+//        цикли
+//        for(float i = 100f; i > 0.5f; i /= 2) {
+//            System.out.println("Element is " + i);
+//        }
 
-        System.out.println("Enter math symbol: ");
-        scan.nextLine();
-        char math = scan.nextLine().charAt(0);
+//        int i = 0;
+//        while(i < 10) {
+//            System.out.println("Element is " + i);
+//            i++;
+//        }
 
-        System.out.println("Enter number 2: ");
-        int b = scan.nextInt();
+//        int i = 100;
+//        do {
+//            System.out.println("Element is " + i);
+//            i++;
+//        } while (i < 10);
 
-        int res = 0;
-        switch (math) {
-            case '+':
-                res = a + b;
-                System.out.println("Res: " + res);
+        // Оператори в циклах
+        for (byte i = 1; i <= 10; i++){
+
+            if(i == 8) {
                 break;
-            case '-':
-                res = a - b;
-                System.out.println("Res: " + res);
-                break;
-            case '*':
-                res = a * b;
-                System.out.println("Res: " + res);
-                break;
-            case '/':
-                if(b == 0)
-                    System.out.println("Error");
-                    else {
-                    res = a / b;
-                    System.out.println("Res: " + res);
-                }
-                break;
-            default:
-                System.out.println("Error");
+            }
+            if(i %2 == 0) {
+                continue;
+            }
+            System.out.println(i);
         }
     }
 }
