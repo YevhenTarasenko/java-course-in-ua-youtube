@@ -1,6 +1,8 @@
 package com.java;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 //    *** lesson 3 ***
@@ -251,15 +253,57 @@ import java.util.Scanner;
 //    }
 //}
 
-class Main {
+//class Main {
+//
+////  Багатовимірні масиви
+//    public static void main(String[] args) {
+////        String[][] words = new String[2][2];
+//        String[][] words2 = {
+//                {"Hello", "World"},
+//                {"Hi", "Amigos"}
+//        };
+//        System.out.println(words2[1][1]);
+//    }
+//}
 
-//  Багатовимірні масиви
-    public static void main(String[] args) {
-//        String[][] words = new String[2][2];
-        String[][] words2 = {
-                {"Hello", "World"},
-                {"Hi", "Amigos"}
-        };
-        System.out.println(words2[1][1]);
-    }
-}
+//    *** lesson 9 ***
+//    collection
+//    колекції
+
+//class Main {
+//    public static void main(String[] args) {
+//        ArrayList<Short> nums = new ArrayList<>();
+//        nums.add((short)56);
+//        short num1 = 45;
+//        nums.add(num1);
+//        nums.add(1, (short)13);
+//        nums.remove(1);
+//        nums.set(0, (short)30);
+//        Short[] numbers = (Short[])nums.toArray();
+//
+//        for(short num : nums) {
+//            System.out.println(num);
+//
+//        }
+//
+//
+////        for(int i = 0; i < nums.size(); i++){
+////            System.out.println(nums.get(i));
+////        }
+//    }
+//}
+
+//    LinkedList
+//class Main {
+//    public static void main(String[] args) {
+//        LinkedList<Float> numbers = new LinkedList<>();
+//        numbers.add(5.5f);
+//        numbers.add(15.523f);
+//        numbers.add(8.512f);
+//
+////        numbers.removeLast()
+//        for(float num : numbers) {
+//            System.out.println(num);
+//        }
+//    }
+//}
