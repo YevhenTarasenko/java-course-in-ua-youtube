@@ -1,5 +1,6 @@
 package com.java;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //    *** lesson 3 ***
@@ -166,35 +167,99 @@ import java.util.Scanner;
 //}
 
 //    *** lesson 7 ***
+//class Main {
+//    public static void main(String[] args) {
+////        цикли
+////        for(float i = 100f; i > 0.5f; i /= 2) {
+////            System.out.println("Element is " + i);
+////        }
+//
+////        int i = 0;
+////        while(i < 10) {
+////            System.out.println("Element is " + i);
+////            i++;
+////        }
+//
+////        int i = 100;
+////        do {
+////            System.out.println("Element is " + i);
+////            i++;
+////        } while (i < 10);
+//
+//        // Оператори в циклах
+//        for (byte i = 1; i <= 10; i++){
+//
+//            if(i == 8) {
+//                break;
+//            }
+//            if(i %2 == 0) {
+//                continue;
+//            }
+//            System.out.println(i);
+//        }
+//    }
+//}
+
+//    *** lesson 8 ***
+//class Main {
+////  Масиви даних
+//    public static void main(String[] args) {
+//        int[] nums = new int[5];
+//        nums[0] = 500;
+//        nums[1] = 500;
+//        nums[2] = 500;
+//        nums[3] = 500;
+//        nums[4] = 500;
+//        System.out.println(nums[0]);
+//
+////      byte[] num2 = new byte[5];
+//        byte[] num2 = {6, 7, 3, 5, 3, -1};
+//
+////      Масиви та цикли
+//        short[] numbers = { 5, 6, 2, 9, 0 };
+//        for(int i = 0; i < numbers.length; i++){
+//            System.out.println(numbers[i]);
+//        }
+//    }
+//}
+
+//class Main {
+//    public static void main(String[] arg) {
+//        System.out.print("Enter number: ");
+//        Scanner scan = new Scanner(System.in);
+//        int user_num = scan.nextInt();
+//
+//        short[] nums = new short[user_num];
+//        for(int i = 0; i < user_num; i++){
+//            System.out.println("Enter element " + (i + 1) + ":");
+//            nums[i] = scan.nextShort();
+//        }
+//
+//        short max_num = nums[0];
+//        for(int i = 0; i < user_num; i++){
+//            if(nums[i] > max_num) {
+//                max_num = nums[i];
+//            }
+//        }
+//
+//        System.out.println("Max element: " + max_num);
+//
+//
+//        for(int i = 0; i < user_num; i++){
+//            System.out.println(nums[i]);
+//        }
+//    }
+//}
+
 class Main {
+
+//  Багатовимірні масиви
     public static void main(String[] args) {
-//        цикли
-//        for(float i = 100f; i > 0.5f; i /= 2) {
-//            System.out.println("Element is " + i);
-//        }
-
-//        int i = 0;
-//        while(i < 10) {
-//            System.out.println("Element is " + i);
-//            i++;
-//        }
-
-//        int i = 100;
-//        do {
-//            System.out.println("Element is " + i);
-//            i++;
-//        } while (i < 10);
-
-        // Оператори в циклах
-        for (byte i = 1; i <= 10; i++){
-
-            if(i == 8) {
-                break;
-            }
-            if(i %2 == 0) {
-                continue;
-            }
-            System.out.println(i);
-        }
+//        String[][] words = new String[2][2];
+        String[][] words2 = {
+                {"Hello", "World"},
+                {"Hi", "Amigos"}
+        };
+        System.out.println(words2[1][1]);
     }
 }
