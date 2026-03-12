@@ -1,10 +1,5 @@
 package com.java;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Scanner;
-
 //    *** lesson 3 ***
 //class Main {
 
@@ -305,5 +300,58 @@ import java.util.Scanner;
 //        for(float num : numbers) {
 //            System.out.println(num);
 //        }
+//    }
+//}
+
+//    *** lesson 9 ***
+//    function
+//    функції
+
+//class Main {
+//    public static void main(String[] args){
+//        info("Hello");
+//        info("Hi");
+//        String words = "hi all!";
+//        info(words);
+//
+//        summa(2, 5);
+//
+//        int result = summa(5, 7);
+//
+//
+//
+////        for(String el : args){
+////            System.out.println(el);
+////        }
+//
+//    }
+//
+//    public static int summa(int a, int b) {
+//        int res = a + b;
+//        info(String.valueOf(res));
+//        return res;
+//    }
+//
+//    public static void info(String word){
+//        System.out.print(word);
+//        System.out.println("!");
+//    }
+//}
+
+//class Main {
+//    public static void main(String[] args){
+//        int[] nums1 = {6,7,4,7};
+//        summa(nums1);
+//
+//        int[] nums2 = {5,5,5,5};
+//        summa(nums2);
+//    }
+//
+//    public static void summa(int[] arr){
+//        int sum = 0;
+//        for(int el : arr) {
+//            sum += el;
+//        }
+//        System.out.println("Summa of all elements: " + sum);
 //    }
 //}
