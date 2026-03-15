@@ -355,3 +355,8 @@ package com.java;
 //        System.out.println("Summa of all elements: " + sum);
 //    }
 //}
+
+
+//    *** lesson 11 ***
+//    OOP theory
+//    ООП теорі
