@@ -2,10 +2,25 @@ package com.java;
 
 public class Transport {
 
-    public float speed;
-    public int weight;
-    public String color;
-    public byte[] coordinates;
+    private float speed;
+    private int weight;
+    private String color;
+    private byte[] coordinates;
+
+    public Transport(float _speed, int _weight, String _color, byte[] _coordinates) {
+//        System.out.println("Object is created");
+        setValue(_speed, _weight, _color, _coordinates);
+        System.out.println(getValues());
+    }
+
+    public Transport(float speed, int weight, String color) {
+//        System.out.println("Object is created");
+        this.speed = speed;
+        this.weight = weight;
+        this.color = color;
+        this.coordinates = new byte[0];
+        System.out.println(this.getValues());
+    }
 
     public void setValue(float _speed, int _weight, String _color, byte[] _coordinates) {
         speed = _speed;
@@ -17,11 +32,15 @@ public class Transport {
     public String getValues() {
         String info = "Speed: " + speed + ". Weight: " + weight + ". Color: " + color + "\n";
 
-        String infoCoordinates = "Coordinates:\n";
-        for(byte el: coordinates){
-            infoCoordinates += el + "\n";
+        if(coordinates.length > 0){
+            String infoCoordinates = "Coordinates:\n";
+            for(byte el: coordinates){
+                infoCoordinates += el + "\n";
+            }
+            return info + infoCoordinates;
         }
-        return info + infoCoordinates;
+
+        return info;
     }
 
 }
