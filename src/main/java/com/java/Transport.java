@@ -7,6 +7,8 @@ public class Transport {
     private String color;
     private byte[] coordinates;
 
+    public Transport() {};
+
     public Transport(float _speed, int _weight, String _color, byte[] _coordinates) {
 //        System.out.println("Object is created");
         setValue(_speed, _weight, _color, _coordinates);
@@ -19,7 +21,6 @@ public class Transport {
         this.weight = weight;
         this.color = color;
         this.coordinates = new byte[0];
-        System.out.println(this.getValues());
     }
 
     public void setValue(float _speed, int _weight, String _color, byte[] _coordinates) {

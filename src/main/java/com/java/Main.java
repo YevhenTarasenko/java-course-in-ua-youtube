@@ -371,8 +371,11 @@ class Main {
     public Main() {}
 
     public static void main(String[] args) {
-        Transport bmw = new Transport(200.5f , 2000 , "Black", new byte[] { 0, 0, 0 });
+        Car bmw = new Car(200.5f , 2000 , "Black", new byte[] { 0, 0, 0 });
 
-        Transport truck = new Transport(130f, 5000, "White");
+        Truck truck = new Truck(130f, 5000, "White", true);
+        truck.getLoaded();
+        truck.setLoaded(false);
+        truck.getLoaded();
     }
 }
