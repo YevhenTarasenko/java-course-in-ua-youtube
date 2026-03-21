@@ -7,4 +7,14 @@ public class Car extends Transport {
         System.out.println(getValues());
 
     }
+
+    @Override
+    public void moveObject() {
+        System.out.println("Object is moving");
+    }
+
+    @Override
+    public void stopObject() {
+        System.out.println("Object stopped");
+    }
 }

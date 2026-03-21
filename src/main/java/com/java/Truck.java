@@ -34,4 +34,14 @@ public class Truck extends Transport{
             return "Truck is not loaded";
         }
     }
+
+    @Override
+    public void moveObject() {
+        System.out.println("Object is moving");
+    }
+
+    @Override
+    public void stopObject() {
+        System.out.println("Object stopped");
+    }
 }

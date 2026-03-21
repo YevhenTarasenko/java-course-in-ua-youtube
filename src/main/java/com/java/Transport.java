@@ -1,6 +1,6 @@
 package com.java;
 
-public class Transport {
+public abstract class Transport {
 
     protected float speed;
     protected int weight;
@@ -43,5 +43,8 @@ public class Transport {
 
         return info;
     }
+
+    public abstract void moveObject();
+    public abstract void stopObject();
 
 }
