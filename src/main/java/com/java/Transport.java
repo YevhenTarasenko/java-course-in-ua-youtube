@@ -6,6 +6,31 @@ public abstract class Transport {
     protected int weight;
     protected String color;
     protected byte[] coordinates;
+    public Engine engine = new Engine();
+
+    class Engine {
+
+        private boolean isReady;
+        private int km;
+
+        public void setValues(boolean isReady, int km) {
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void IsReady(boolean isReady) {
+            this.isReady = isReady;
+        }
+
+        public void info(){
+            if(isReady) {
+                System.out.println("Engine is good");
+            } else {
+                System.out.println("Engine is damaged. He has already driven " + km + " km.");
+            }
+        }
+
+    }
 
     public Transport() {};
 
