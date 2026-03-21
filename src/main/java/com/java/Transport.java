@@ -2,10 +2,10 @@ package com.java;
 
 public class Transport {
 
-    private float speed;
-    private int weight;
-    private String color;
-    private byte[] coordinates;
+    protected float speed;
+    protected int weight;
+    protected String color;
+    protected byte[] coordinates;
 
     public Transport() {};
 

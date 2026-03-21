@@ -374,8 +374,8 @@ class Main {
         Car bmw = new Car(200.5f , 2000 , "Black", new byte[] { 0, 0, 0 });
 
         Truck truck = new Truck(130f, 5000, "White", true);
-        truck.getLoaded();
-        truck.setLoaded(false);
-        truck.getLoaded();
+        truck.setValue(130f, 5000, "White", new byte[] { 0, 0, 0 }, true);
+        System.out.println(truck.getValues());
+
     }
 }
