@@ -1,4 +1,6 @@
 package com.java;
+import com.java.db.DB;
+import jdk.jfr.Percentage;
 
 //    *** lesson 3 ***
 //class Main {
@@ -370,29 +372,69 @@ class Main {
 
     public Main() {}
 
+//    public static void main(String[] args) {
+//        Car bmw = new Car(200.5f , 2000 , "Black", new byte[] { 0, 0, 0 });
+//        bmw.engine.setValues(false, 200);
+//        bmw.engine.info();
+//
+//        Truck truck = new Truck(130f, 5000, "White", true);
+//        truck.engine.setValues(true, 1);
+//        truck.engine.info();
+////        truck.moveObject();
+////        truck.setValue(130f, 5000, "White", new byte[] { 0, 0, 0 }, true);
+////        System.out.println(truck.getValues());
+//
+//        Car flyCar = new Car(200.5f , 2000 , "White", new byte[] { 0, 10, 0 }) {
+//            @Override
+//            public String getValues() {
+//                return "Fly Car";
+//            }
+//
+//            @Override
+//            public void moveObject() {
+//                System.out.println("Object is flying");
+//            }
+//        };
+//        flyCar.moveObject();
+//    }
+
+//    lesson 18
     public static void main(String[] args) {
-        Car bmw = new Car(200.5f , 2000 , "Black", new byte[] { 0, 0, 0 });
-        bmw.engine.setValues(false, 200);
-        bmw.engine.info();
+        DB db = new DB();
 
-        Truck truck = new Truck(130f, 5000, "White", true);
-        truck.engine.setValues(true, 1);
-        truck.engine.info();
-//        truck.moveObject();
-//        truck.setValue(130f, 5000, "White", new byte[] { 0, 0, 0 }, true);
-//        System.out.println(truck.getValues());
+        final int num = 10;
+//        num = 11;
 
-        Car flyCar = new Car(200.5f , 2000 , "White", new byte[] { 0, 10, 0 }) {
-            @Override
-            public String getValues() {
-                return "Fly Car";
-            }
+        Person obj1 = new Person();
+        Person obj2 = new Person();
+        Person obj3 = new Person();
+        Person.GetCount();
 
-            @Override
-            public void moveObject() {
-                System.out.println("Object is flying");
-            }
-        };
-        flyCar.moveObject();
+        Person.count = 10;
+
+        add(5, 7);
+        add(5.5f, 7.3f);
+        add("Hi", "World");
     }
+
+    public static void add(int a, int b) {
+        int res = a + b;
+        System.out.println("Res: " + res);
+    }
+
+    public static void add(float a, float b) {
+        float res = a + b;
+        System.out.println("Res: " + res);
+    }
+
+    public static void add(String a, String b) {
+        String res = a + b;
+        System.out.println("Res: " + res);
+    }
+
+    public static void add(int a, int b, int y) {
+        int res = a + b + y;
+        System.out.println("Res: " + res);
+    }
+
 }
